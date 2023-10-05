@@ -19,6 +19,7 @@ public class Solution {
             }
         }
 
+        //after sorting to check the edge case, like in 2,3,3 there is no logic to check the 3 count so added an extra condition
         if((majorityCount==1 || majorityCount<=count) && (result.Count==0 || result[result.Count-1]!=nums[n-1])){
             result.Add(nums[n-1]);
         }
