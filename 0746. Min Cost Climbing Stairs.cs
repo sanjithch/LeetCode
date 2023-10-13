@@ -6,6 +6,8 @@ public class Solution {
       dp[1] = cost[0];
       dp[2] = cost[1];
       int ind = 2;
+
+        // check each step for getting minimum cost
       while(ind < n+1){
           dp[ind] = cost[ind-1]+Math.Min(dp[ind-1], dp[ind-2]);
           ind++;
